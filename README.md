@@ -23,7 +23,7 @@ python main.py
 
 The model is already created. But if you want to play with it or improve the model, you can edit model.py file and run it.
 ```
-python model.py
+python model_2.py
 ```
 
 Note: shape preditcrot obtained via https://github.com/italojs/facial-landmarks-recognition.git
