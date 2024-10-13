@@ -33,9 +33,14 @@ while cap.isOpened():
             for landmark in face_landmarks.landmark:
                 landmarks.append([landmark.x, landmark.y, landmark.z])
             landmarks = np.array(landmarks).flatten().reshape(1, -1)  # Aplanar y reestructurar
+            
+            print(landmarks)
+            print(type(landmarks))
+            print(landmarks.size)
 
             # Hacer la predicción
             prediction = model.predict(landmarks)
+            print(prediction)
             predicted_class = np.argmax(prediction, axis=1)
 
             # Mostrar el resultado de la predicción
